@@ -1,7 +1,10 @@
 import "./styles/theme.css";
 import "./styles/global.css";
-import { NotFound } from "./Pages/NotFound";
+import { Home } from "./Pages/Home";
+import { useState } from "react";
 
 export function App() {
-  return <NotFound />;
+  const [state, setIsHome] = useState(true);
+
+  return <Home />;
 }
